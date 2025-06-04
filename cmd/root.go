@@ -5,6 +5,7 @@ import (
 
 	"github.com/52funny/pikpakcli/cmd/download"
 	"github.com/52funny/pikpakcli/cmd/embed"
+	"github.com/52funny/pikpakcli/cmd/link"
 	"github.com/52funny/pikpakcli/cmd/list"
 	"github.com/52funny/pikpakcli/cmd/new"
 	"github.com/52funny/pikpakcli/cmd/quota"
@@ -53,6 +54,7 @@ func init() {
 	rootCmd.AddCommand(embed.EmbedCmd)
 	rootCmd.AddCommand(quota.QuotaCmd)
 	rootCmd.AddCommand(list.ListCmd)
+	rootCmd.AddCommand(link.LinkCommand)
 }
 
 // Execute the command line interface
